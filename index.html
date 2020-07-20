@@ -75,24 +75,15 @@
       	<div>
     </footer>
 		<script>
-    	// let slider = document.querySelector('.switch');
-    	// slider.addEventListener('click', ()=>{
-    	// 	let lightCheck = !document.querySelector('.theme').href.includes('dark')
-    	// 	let target = event.target.closest('.slider');
-    	// 	if(target) {
-    	// 		lightCheck ? document.querySelector('.theme').href = "dark-style.css" : document.querySelector('.theme').href = "style.css"
-    		
-    	// 	}
-    	// })
-    	let page = document.querySelector('.page');
-    	let slider = document.querySelector('.switch');
-    	slider.addEventListener('click', ()=>{
-    		let target = event.target.closest('.slider');
-    		if(target){
-    	 		page.classList.toggle('light-theme');
-    	 		page.classList.toggle('dark-theme');
-    	 	};
-    	 });
+    		let page = document.querySelector('.page');
+    		let slider = document.querySelector('.switch');
+    		slider.addEventListener('click', ()=>{
+    			let target = event.target.closest('.slider');
+    			if(target){
+    		 		page.classList.toggle('light-theme');
+    		 		page.classList.toggle('dark-theme');
+    		 	};
+    		 });
     </script>
   </body>
 </html>
