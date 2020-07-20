@@ -7,8 +7,14 @@
     <title>Портфолио Junior верстальщика</title>
   </head>
 
-  <body>
+  <body class="page light-theme">
     <header class="page-header">
+	    <div class="center">
+    		<label class="switch">
+  			<input type="checkbox">
+  			<span class="slider round"></span>
+		</label>
+	    </div>
     	<div class="container">
     		<a title="tel: phone-number"> phone number</a>
       		<a title="tg-link" target="_blank">telegram@link</a>
@@ -68,5 +74,25 @@
       		<a class="footer-tg" href="tg-link" target="_blank">telegram@link</a>
       	<div>
     </footer>
+		<script>
+    	// let slider = document.querySelector('.switch');
+    	// slider.addEventListener('click', ()=>{
+    	// 	let lightCheck = !document.querySelector('.theme').href.includes('dark')
+    	// 	let target = event.target.closest('.slider');
+    	// 	if(target) {
+    	// 		lightCheck ? document.querySelector('.theme').href = "dark-style.css" : document.querySelector('.theme').href = "style.css"
+    		
+    	// 	}
+    	// })
+    	let page = document.querySelector('.page');
+    	let slider = document.querySelector('.switch');
+    	slider.addEventListener('click', ()=>{
+    		let target = event.target.closest('.slider');
+    		if(target){
+    	 		page.classList.toggle('light-theme');
+    	 		page.classList.toggle('dark-theme');
+    	 	};
+    	 });
+    </script>
   </body>
 </html>
