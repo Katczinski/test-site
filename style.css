@@ -111,11 +111,15 @@ body {
 }
 
 .skill-html {
-  background-image: url("img/icon-html.svg");
+  background-image: url("https://raw.githubusercontent.com/Katczinski/test-site/190773a0c407b589f2bb08a425d0917d5fa62a02/icon-html.svg");
 }
 
 .skill-css {
-  background-image: url("img/icon-css.svg");
+  background-image: url("https://raw.githubusercontent.com/Katczinski/test-site/190773a0c407b589f2bb08a425d0917d5fa62a02/icon-css.svg");
+}
+
+.skill-js {
+  background-image: url("https://raw.githubusercontent.com/Katczinski/test-site/190773a0c407b589f2bb08a425d0917d5fa62a02/icon-js.svg");
 }
 
 .level {
